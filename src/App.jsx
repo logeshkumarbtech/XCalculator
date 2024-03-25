@@ -27,7 +27,7 @@ function App() {
     <div className={styles.App}>
       <h1>React Calculator</h1>
       <div>
-      <input type="text" value={input} readOnly></input></div>           
+      <input type="text" value={input} readOnly></input></div> 
         
         {output && <div className={styles.output}>{output}</div>}
         <div className={styles.buttons}>
@@ -49,7 +49,7 @@ function App() {
           <button value="*" onClick={(e)=>{e.preventDefault();setInput((prevState)=>prevState+e.target.value)}}>*</button>
         </div>
         <div className={styles.buttons}>
-          <button value="" onClick={handleClear}>c</button>
+          <button onClick={handleClear}>C</button>
           <button value="0" onClick={(e)=>{e.preventDefault();setInput((prevState)=>prevState+e.target.value)}}>0</button>
           <button onClick={handleSubmit}>=</button>
           <button value="/" onClick={(e)=>{e.preventDefault();setInput((prevState)=>prevState+e.target.value)}}>/</button>
