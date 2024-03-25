@@ -10,7 +10,8 @@ function App() {
      
     try{      
       const total = eval("(" + input + ")");
-      setOutput(total);     
+      setOutput(total);  
+      setInput("")   
       
     }catch(err){
       setOutput("Error");
